@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator();
 export default class DrawerNavigation extends Component{
     render(){
         return(
-            <Drawer.Navigator>
+            <Drawer.Navigator screenOptions={() => ({headerShown: false})}>
                 <Drawer.Screen name="Início" component={TabNavigator}/>
                 <Drawer.Screen name="Perfil" component={Profile}/>
             </Drawer.Navigator>
